@@ -1,0 +1,391 @@
+/* HOME PAGE */
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+/* HOME PAGE - NAVIGATION */
+.nav-ul-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu {
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.nav-menu:hover {
+    transform: scale(1.05);
+}
+
+.nav-ul-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-ul-links a:hover {
+    color: #fde784;
+}
+
+.nav-hidden {
+    transform: translateY(-100%); /* Slides the bar up out of view */
+}
+
+/* home page - logo */
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 5rem; 
+}
+
+/* HOME PAGE - SECTION 1 */
+
+.home1 {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #464C8B;
+}
+
+.home1-hero {
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+#home1-div1-name {
+    font-size: clamp(4rem, 8vw, 7rem);
+    text-shadow: 0 0 10px #d59797,  
+                 0 0 20px #af6b6e;
+}
+
+/* HOME PAGE - WORK AREAS */
+.home-workareas {
+    padding-top: 0;
+    justify-content: center;
+    background-color: #464C8B;
+    align-items: center;
+    gap: 2rem;
+}
+
+.workareas-container {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.workareas-container div {
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+}
+
+.workareas-back {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 20rem;
+    aspect-ratio: 422/309;
+}
+
+#workareas-back1 {
+    background-image: url('img/home-area-ux.png');
+}
+
+#workareas-back2 {
+    background-image: url('img/home-area-social.png');
+}
+
+/* CHAT GPT */
+#home1-div1-firstname span {
+  display: inline-block; /* Essential for movement! */
+  font-family: 'adevas-pixel', sans-serif;
+  /*animation: wave 2s ease-in-out infinite;
+  animation-delay: var(--delay);*/
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  50% {
+    transform: translateY(-15px); /* The "Float" height */
+    text-shadow: 0 10px 10px rgba(0,0,0,0.2); /* Adding a shadow for depth */
+    color: #ffcc00; /* Optional: change color at the peak */
+  }
+}
+
+/* CHAT GPT */
+
+/* HOME PAGE - SECTION 2 */
+
+.home-about {
+    gap: 2rem;
+    justify-content: center;
+    background-color: #464C8B;
+    align-items: center;
+}
+
+.home-about div:first-child {
+    gap: 2rem;
+    width: clamp(20rem, 40vw, 40vw);
+}
+
+.home-about div:first-child div {
+    width: 100%;
+    gap: 1rem;
+}
+
+.img-background {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home-about-gif {
+    background-image: url('img/avatar-gif.gif');
+    max-width: 50rem;
+    width: clamp(20rem, 40vw, 30vw);
+    aspect-ratio: 1/1;
+}
+
+/* home page - section 2 - background images*/
+
+.home-about-game-back1 {
+    background-image: url('img/about-background-top.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    aspect-ratio: 601/83;
+}
+
+.home-about-game-back2 {
+    background-image: url('img/about-background-bottom.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    aspect-ratio: 608/769;
+    display: flex;
+    justify-content: center;
+}
+
+/* home page - section 2 - background images - select outfit text*/
+
+.home-about-game-back2-div1 {
+    background-color: white;
+    opacity: 50%;
+    height: 2rem;
+    justify-content: center;
+}
+
+.home-about-game-back2-div1 p {
+    align-self: center;
+}
+
+/* HOME PAGE - SECTION 3 - projects heading*/
+.home-heading-projects {
+    display: flex;
+    justify-content: center;
+    background-color: #86222F;
+}
+
+/* HOME PAGE - SECTIONS 4,5,6 - projects*/
+/* project sections share the same div styling: phones, overview [tags,desc,buttons]*/
+
+.home-projects {
+    justify-content: center;
+    gap: 2rem;
+}
+
+#home-project1 {
+    background-color: #86222F;
+}
+
+#home-project2 {
+    background-color: #464C8B;
+}
+
+#home-project3 {
+    background-color: #86222F;
+}
+
+/* HOME PAGE - SECTIONS 4,5,6 - phones*/
+
+.home-project-phones {
+    justify-content: center;
+}
+
+.home-project-phones div img {
+    width: clamp(25rem, 60vw, 50vw);
+}
+
+
+/* HOME PAGE - SECTIONS 4,5,6 - project overview*/
+.home-project-overview {
+    gap: 2rem;
+}
+
+.home-project-overview-tags {
+    gap: 0.5rem;
+}
+
+.home-project-overview-desc {
+    background-color: #F7E5CF;
+    padding: 5%;
+}
+
+.home-project-overview-buttons {
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* HOME PAGE - FOOTER*/
+
+.footer-div1 {
+    gap: 2rem;
+}
+
+.footer-div1 div > ul {
+   list-style: none;
+}
+
+.footer-div1-div2 {
+    border: 1px solid #F7E5CF;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.footer-div2 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.footer-div2 button{
+    background: transparent;
+    border: none;
+}
+
+.footer-div2 button img {
+    width: 3rem;
+    aspect-ratio: 1/1;
+}
+
+.footer-div2 button:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* PROJECT PAGE */
+
+.project-vid {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-vid-back {
+    background-image: url('img/project1-back-vid.png');
+    background-size: contain;
+    background-position: center;
+    background-position: center;
+    background-repeat: none;
+    width: clamp(20rem, 60vw, 40rem);
+    aspect-ratio: 812/588;
+    height: auto;
+    position: relative;
+}
+
+.project-vid-back iframe {
+    aspect-ratio: 560/315;
+    position: absolute;
+    top: 13%;
+    left: 15.5%;
+    width: 77%;
+    height: 70%;
+}
+
+.project-content-table {
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #464C8B;
+}
+
+.content-table{
+    gap: 1rem;
+    max-width: 80vw;
+    justify-content: center;
+}
+
+.content-table div {
+    background-color: #F7E5CF;
+    border: 2px solid black;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex: 1;
+}
+
+
+
+@media (max-width: 700px) {
+    .flex-dir-media {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .home-workareas div {
+        flex: 1;
+    }
+
+    .home-workareas div h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-ul-links.active {
+        display: flex !important;
+    }
+    
+    .nav-ul-links {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background-color: #464C8B;
+        top: 100%;
+        width: 100vw;
+        position: absolute;
+        height: calc(100vh - 100%);
+        z-index: 999;
+        left: -0.2%;
+    }
+}

@@ -1,0 +1,68 @@
+KEEPING TRACK OF DIVS FOR STYLING
+
+INDEX.HTML
+
+NAV:
+- a [link containing logo pic - redirect to home]
+- ul [links to other pages]
+
+
+HOME1 [top]:
+- div1 [hero banner] [no class]
+- div2 [intro] [no class]
+- workareas
+-- 3 divs containing folder background img and subheading text (work areas)
+
+
+ABOUT 
+- div 1 [about me text] [no class]
+
+- game 
+-- back: top image 
+-- back2: bottom image (main gameplay here)
+---- div1: text select outfit
+
+
+'FEATURED PROJECTS' HEADING 
+
+
+PROJECT1, PROJECT2, PROJECT3
+- phones
+- overview
+-- titles
+-- tags
+-- description
+-- buttons to learn more & link
+
+
+FOOTER
+- container
+-- navigation links
+-- contact box 
+
+- button back to top
+
+
+
+        <div class="home-about-game flex-dir-col">
+            <div class="home-about-game-back1">
+            </div>
+
+            <div class="home-about-game-back2">
+                <div class="home-about-game-back2-div1 flex-dir-row">
+                    <p class="font-roboto-mono font-size-1rem">SELECT MY OUTFIT</p>
+                </div>
+            </div>
+        </div>
+
+
+                    <h2 class="font-silkscreen font-size-1-25rem color-cream" id="about-me">ABOUT ME</h2>
+            <br />
+            <p class="font-size-1rem color-cream">
+                <br /><br /> I am currently pursuing the User Experience Design and Computing majors through the
+                Bachelor of Design at the University of Melbourne.
+                <br /><br /> My portfolio will be an interactive deep dive into real-world projects that aim to improve
+                quality of life, whether it is enhancing student productivity, simplifying complex board games or easing
+                user flow on confusing e-commerce websites.
+                <br /><br /> Outside of work, I enjoy gaming and making video content.
+            </p>

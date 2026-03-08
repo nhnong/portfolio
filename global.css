@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  height: fit-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #464C8B;
+    color: white;
+    border-bottom: 2px solid #000000;
+    top: 0;
+    position: fixed;
+    background-color: #464C8B;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+    padding-left: 5%;
+    padding-right: 5%;
+    z-index: 100;
+}
+
+section {
+    display: flex;
+    padding: 5rem 5%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5%;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #464C8B;    
+}
+
+/* flex related */
+.flex-dir-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-dir-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-dir-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.padding-top-10rem {
+    padding-top: 10rem;
+}
+
+/* text related */
+p {
+    font-family: 'roboto-mono', monospace;
+    font-size: 1rem;
+}
+/* font related*/
+
+
+
+.font-size-3rem {
+    font-size: clamp(2rem, 8vw, 3rem);
+}
+
+.font-size-2rem {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.font-size-1-25rem {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.font-size-1rem {
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+}
+
+
+.font-roboto-mono {
+    font-family: 'roboto-mono', monospace;
+}
+
+.font-silkscreen {
+    font-family: 'silkscreen', sans-serif;
+}
+
+.font-adevas-pixel {
+    font-family: 'adevas-pixel', sans-serif;
+}
+
+.font-lexend-exa {
+    font-family: 'lexend-exa', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'silkscreen';
+    src: url('fonts/Silkscreen/Silkscreen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'adevas-pixel'; 
+  src: url('fonts/adevas-pixel-font/AdevaspixelRegular-j9R07.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'lexend-exa'; 
+  src: url('fonts/Lexend_Exa/static/LexendExa-Thin.ttf') format('truetype');
+}
+
+
+/* colour related */
+
+.color-purple {
+    color: #464C8B;
+}
+
+.color-cream {
+    color: #F7E5CF;
+}
+
+.color-red {
+    color: #86222F;
+}
+
+.color-white {
+    color: white;
+}
+
+/* background related */
+.back-purple {
+    background-color: #464C8B;
+}
+
+.back-cream {
+    background-color: #F7E5CF;
+}
+
+.back-red {
+    background-color: #86222F;
+}
+
+
+/* button related */
+.primary-button {
+    flex: 1;
+    border: 1px solid black;
+    padding: 0.5rem 5%;
+    background-color: #F7E5CF;
+    color: black;    
+    box-shadow: 2px 8px 2px rgba(0,0,0,0.5);
+}
+
+.primary-button:hover {
+    background-color: #fde784;
+    scale: 1.02;
+}
+
+.primary-button:active {
+    background-color: #fde784;
+    scale: 0.98;
+}
+
+.primary-button p {
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
+
+.primary-tag {
+    border-radius: 1.5rem;
+    border: 1px solid #F7E5CF;
+    padding: 0.5rem 5%;
+    background-color: transparent;
+    color: #F7E5CF;
+}
+
