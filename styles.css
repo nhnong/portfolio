@@ -422,7 +422,7 @@
 }
 
 .figma-demo {
-    display: flex;
+    display: block;
     width: 20rem;
 }
 
