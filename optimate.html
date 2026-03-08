@@ -25,23 +25,17 @@
     </nav>
 
     <section class="project-vid back-cream flex-dir-col padding-top-10rem">
-        <div class="flex-dir-col align-center">
+        <div class="project-title flex-dir-col expand-width-80vw">
             <h1 class="font-adevas-pixel font-size-3rem color-purple">OPTIMATE:</h1>
-            <h2 class="font-lexend-exa font-size-1-25rem color-purple">Creating a more Productive Student Experience
+            <h2 class="font-lexend-exa font-size-1-25rem color-purple">
             </h2>
+            <p class="font-roboto-mono font-size-1rem">Isn’t it frustrating when you are ready to study, but every
+                library is full? OptiMate, a real-time seat availability tracker for libraries, empowers students to
+                make the most of their time at uni!</p>
         </div>
-        <div class="project-vid-back">
-            <iframe class="project-iframe" src="https://www.youtube.com/embed/bCw39a0Q3nI?si=DmYNf45PPHDti0nf"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-    <section class="project-content-table flex-dir-col">
-        <h2 class="font-lexend-exa font-size-2rem color-cream">TABLE OF CONTENTS</h2>
-        <div class="content-table flex-dir-row">
+        <div class="content-table flex-dir-media">
             <div>
-                <h2 class="font-silkscreen color-black font-size-1-25rem">1 - The Inspiration</h2>
+                <h2 class="font-silkscreen color-black font-size-1-25rem">1 - The Overview</h2>
             </div>
             <div>
                 <h2 class="font-silkscreen color-black font-size-1-25rem">2 - The Development</h2>
@@ -51,6 +45,76 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="project-inspo flex-dir-col justify-center">
+        <h1 class="font-adevas-pixel font-size-3rem color-cream">OVERVIEW</h1>
+        <div class="project-inspo-text expand-width-80vw flex-dir-media">
+            <div class="back-cream">
+                <h2 class="font-lexend-exa font-size-1-25rem">THE PROBLEM</h2>
+                <p class="font-roboto-mono font-size-1rem">As university students, we find ourselves in a common
+                    frustrating
+                    situation of arriving at the library, only to discover that all the seats were taken. This recurring
+                    issue not only leaves us tired and unmotivated to study, but also wastes precious time. Our team
+                    determined that there had to be a better way to address this problem and make the library experience
+                    more efficient for Unimelb students.</p>
+            </div>
+            <div class="back-dark-red">
+                <h2 class="font-lexend-exa font-size-1-25rem color-cream">THE SOLUTION</h2>
+                <p class="font-roboto-mono font-size-1rem color-cream">This sparked the idea for OptiMate, a real-time
+                    seat
+                    availability
+                    tracker for libraries allowing students to make informed decisions about where to study and optimize
+                    their time at university. With OptiMate, students can easily check the availability of seats in
+                    their
+                    preferred library before heading out, saving them valuable time and reducing stress.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="back-cream justify-center">
+        <div class="project-vid-back expand-width-80vw">
+            <iframe class="project-iframe" src="https://www.youtube.com/embed/bCw39a0Q3nI?si=DmYNf45PPHDti0nf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="back-purple justify-center">
+        <h1 class="font-adevas-pixel font-size-3rem color-cream">DEVELOPMENT STAGES</h1>
+    </section>
+
+    <section class="project-dev back-purple justify-center flex-dir-media align-center">
+        <div class="project-dev-stages flex-dir-media-col expand-width-80vw">
+            <button class="button-folder active folder-red" onclick="switchFolder(this)"><span
+                    class="font-silkscreen color-cream">User<br /> Research</span></button>
+            <button class="button-folder folder-red" onclick="switchFolder(this)"><span
+                    class="font-silkscreen color-cream">Design<br /> Choices</span></button>
+            <button class="button-folder folder-red" onclick="switchFolder(this)"><span
+                    class="font-silkscreen color-cream">Coding<br /> Process</span></button>
+        </div>
+        <div class="project-dev-window expand-width-80vw">
+            <div class="dev-window-mask">
+                <div>
+                    <h2 class="font-lexend-exa font-size-1-25 color-purple">WHAT ARE STUDENTS SAYING?</h2>
+                    <p>
+                        Implementation of timer & to-do-list:
+
+                        The timer and to-do list page combines two features for a simpler structure, allowing users to
+                        input tasks and mark them off as they finish it while seeing the Pomodoro timer at the same
+                        time. This design helps users focus on the foremost task and optimise time without having the
+                        distraction of switching tabs
+                        Implementation of libraries page:
+
+                        Each library is stored as its own card and can be accessed through the homepage, either through
+                        scrolling down, using the search bar or filtering search. The home page utilises a simple layout
+                        allowing users to search for the desired library based on key features, including whether
+                        charging is available, food allowed, noise level desired and seating types. Within each library
+                        page, users can view real time the number for specific types of seats and decide where to go.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="footer-div2">
@@ -73,4 +137,7 @@
         </div>
     </footer>
 
-    <script src="j
+    <script src="js/script.js"></script>
+</body>
+
+</html>

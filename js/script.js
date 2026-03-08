@@ -37,3 +37,11 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
 });
+
+
+function switchFolder(clicked) {
+  document.querySelectorAll('.button-folder').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  clicked.classList.add('active');
+}
