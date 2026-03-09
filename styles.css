@@ -4,6 +4,7 @@
     overflow: hidden;
     height: 100vh;
 }
+
 /* HOME PAGE - NAVIGATION */
 .nav-ul-links {
     list-style: none;
@@ -32,7 +33,8 @@
 }
 
 .nav-hidden {
-    transform: translateY(-100%); /* Slides the bar up out of view */
+    transform: translateY(-100%);
+    /* Slides the bar up out of view */
 }
 
 /* home page - logo */
@@ -44,7 +46,7 @@
 }
 
 .logo {
-    height: 5rem; 
+    height: 5rem;
 }
 
 /* HOME PAGE - SECTION 1 */
@@ -64,8 +66,8 @@
 
 #home1-div1-name {
     font-size: clamp(4rem, 8vw, 7rem);
-    text-shadow: 0 0 10px #d59797,  
-                 0 0 20px #af6b6e;
+    text-shadow: 0 0 10px #d59797,
+        0 0 20px #af6b6e;
 }
 
 /* HOME PAGE - WORK AREAS */
@@ -85,7 +87,7 @@
 
 .workareas-container div {
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     gap: 1rem;
 }
 
@@ -110,13 +112,21 @@
 
 /* CHAT GPT */
 #home1-div1-name span {
-    display: inline-block; /* needed for transform to work on inline elements */
+    display: inline-block;
+    /* needed for transform to work on inline elements */
     animation: wave 2s ease-in-out infinite;
 }
 
 @keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50%       { transform: translateY(-15px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 
@@ -249,16 +259,23 @@
 
 .footer-div1 {
     gap: 2rem;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.footer-div1 div > ul {
-   list-style: none;
+.footer-div1 div {
+    gap: 2rem;
+}
+
+.footer-div1 div>ul {
+    list-style: none;
 }
 
 .footer-div1-div2 {
     border: 1px solid #F7E5CF;
     justify-content: center;
-    padding: 0.5rem 1rem;
+    padding: 2%;
 }
 
 .footer-div2 {
@@ -266,7 +283,7 @@
     align-self: flex-end;
 }
 
-.footer-div2 button{
+.footer-div2 button {
     background: transparent;
     border: none;
 }
@@ -298,7 +315,7 @@
     align-items: center;
 }
 
-.project-hero img{
+.project-hero img {
     width: 100%;
     height: auto;
 }
@@ -307,7 +324,7 @@
     width: 40vw;
 }
 
-.project-dev-bear img{
+.project-dev-bear img {
     width: 100%;
     height: auto;
 }
@@ -317,6 +334,7 @@
     align-items: center;
     gap: 1rem;
 }
+
 /*
 .project-vid-back {
     background-image: url('img/project1-back-vid.png');
@@ -377,7 +395,7 @@
 }
 
 /* in catan project only*/
-.project-inspo-text-extra{
+.project-inspo-text-extra {
     width: 60vw;
     border: dashed 2px #F7E5CF;
     border-radius: 25px;
@@ -429,10 +447,10 @@
 .dev-window-mask {
     height: 87%;
     width: 100%;
-    background-color: #F7E5CF;  
+    background-color: #F7E5CF;
     box-sizing: border-box;
     padding: 10%;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     position: absolute;
     bottom: 5%;
     justify-content: center;
@@ -470,7 +488,7 @@
     gap: 2rem;
 }
 
-.project-demo-extra{
+.project-demo-extra {
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -499,9 +517,11 @@
         flex-direction: column;
         align-items: center;
     }
+
     .expand-width-80vw {
         width: 80vw;
     }
+
     .flex-dir-media-col {
         flex-direction: row;
     }
@@ -527,7 +547,7 @@
     .nav-ul-links.active {
         display: flex !important;
     }
-    
+
     .nav-ul-links {
         display: none;
         flex-direction: column;
@@ -542,18 +562,26 @@
         z-index: 999;
         left: -0.2%;
     }
+
+    .footer-div1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 700px) {
     .project-dev {
         align-items: center;
     }
+
     .project-dev-stages {
         padding-top: 0%;
     }
-    .project-dev-window{
+
+    .project-dev-window {
         height: 70vh
     }
+
     .button-folder {
         flex: 1;
     }
@@ -567,6 +595,7 @@
     .figma-demo {
         width: 60vw;
     }
+
     .demo-text {
         width: 80vw;
     }
