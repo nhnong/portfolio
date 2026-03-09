@@ -1,22 +1,4 @@
-/*
-document.addEventListener('DOMContentLoaded', () => {
-    const textElement = document.getElementById('home1-div1-firstname');
-    
-    if (textElement) {
-        const words = textElement.innerText.split("");
-        textElement.innerHTML = "";
 
-        words.forEach((letter, i) => {
-            const span = document.createElement('span');
-            span.innerText = letter === " " ? "\u00A0" : letter;
-            span.style.setProperty('--delay', `${i * 0.1}s`);
-            textElement.appendChild(span);
-        });
-    } else {
-        console.error("Could not find the element #wave-text!");
-    }
-});
-*/
 const navMenu = document.querySelector('.nav-menu');
 navMenu.addEventListener('click', () => {
     const navLinks = document.querySelector('.nav-ul-links');
@@ -53,3 +35,18 @@ function switchFolder(clicked) {
     });
     document.querySelector(`[data-panel="${target}"]`).classList.add('active');
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const h1 = document.getElementById('home1-div1-name');
+    const text = h1.innerText;
+    
+    h1.innerHTML = text
+        .split('')
+        .map((char, i) => 
+            char === ' ' 
+            ? ' ' 
+            : `<span style="animation-delay: ${i * 0.1}s">${char}</span>`
+        )
+        .join('');
+});

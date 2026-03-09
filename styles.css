@@ -109,27 +109,16 @@
 }
 
 /* CHAT GPT */
-#home1-div1-firstname span {
-  display: inline-block; /* Essential for movement! */
-  font-family: 'adevas-pixel', sans-serif;
-  /*animation: wave 2s ease-in-out infinite;
-  animation-delay: var(--delay);*/
+#home1-div1-name span {
+    display: inline-block; /* needed for transform to work on inline elements */
+    animation: wave 2s ease-in-out infinite;
 }
-
 
 @keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-    text-shadow: 0 0 0 rgba(0,0,0,0);
-  }
-  50% {
-    transform: translateY(-15px); /* The "Float" height */
-    text-shadow: 0 10px 10px rgba(0,0,0,0.2); /* Adding a shadow for depth */
-    color: #ffcc00; /* Optional: change color at the peak */
-  }
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-15px); }
 }
 
-/* CHAT GPT */
 
 /* HOME PAGE - SECTION 2 */
 
@@ -305,9 +294,20 @@
 
 .project-hero {
     width: 60vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-hero img{
+    width: 100%;
+    height: auto;
+}
+
+.project-dev-bear {
+    width: 40vw;
+}
+
+.project-dev-bear img{
     width: 100%;
     height: auto;
 }
@@ -565,7 +565,7 @@
 
 @media (max-width: 700px) {
     .figma-demo {
-        width: 40vw;
+        width: 60vw;
     }
     .demo-text {
         width: 80vw;
