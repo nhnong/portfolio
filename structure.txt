@@ -66,3 +66,15 @@ FOOTER
                 user flow on confusing e-commerce websites.
                 <br /><br /> Outside of work, I enjoy gaming and making video content.
             </p>
+
+
+            scappped video div:
+
+                <section class="back-cream justify-center">
+        <div class="project-vid-back expand-width-80vw">
+            <iframe class="project-iframe" src="https://www.youtube.com/embed/bCw39a0Q3nI?si=DmYNf45PPHDti0nf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>

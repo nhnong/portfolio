@@ -81,6 +81,10 @@ p {
     font-size: 1rem;
 }
 
+mark {
+    background-color: #fde784;
+    opacity: 0.8;
+}
 /* font related*/
 
 
@@ -101,6 +105,9 @@ p {
     font-size: clamp(0.875rem, 1.2vw, 1rem);
 }
 
+.font-size-0-75rem {
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
 
 .font-roboto-mono {
     font-family: 'roboto-mono', monospace;

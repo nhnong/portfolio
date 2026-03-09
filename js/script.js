@@ -40,8 +40,16 @@ window.addEventListener('scroll', () => {
 
 
 function switchFolder(clicked) {
-  document.querySelectorAll('.button-folder').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  clicked.classList.add('active');
+    document.querySelectorAll('.button-folder').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    clicked.classList.add('active');
+
+
+    // switch active panel
+    const target = clicked.dataset.target;
+    document.querySelectorAll('.dev-window-mask').forEach(panel => {
+        panel.classList.remove('active');
+    });
+    document.querySelector(`[data-panel="${target}"]`).classList.add('active');
 }
