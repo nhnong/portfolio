@@ -189,7 +189,13 @@ mark {
     box-shadow: 2px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-.primary-button:hover {
+.primary-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.primary-button:hover:not(:disabled) {
     background-color: #fde784;
     scale: 1.02;
 }

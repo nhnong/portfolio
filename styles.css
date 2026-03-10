@@ -65,7 +65,7 @@
 }
 
 #home1-div1-name {
-    font-size: clamp(4rem, 8vw, 7rem);
+    font-size: clamp(4rem, 8vw, 8rem);
     text-shadow: 0 0 10px #d59797,
         0 0 20px #af6b6e;
 }
